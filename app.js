@@ -45,6 +45,7 @@ function sortByRichest() {
   data.sort((a, b) => b.money - a.money);
 
   updateDOM();
+  calculateWealth();
 }
 // FILTER MILLIONAIRES
 function showMillionaires() {
@@ -53,6 +54,7 @@ function showMillionaires() {
   });
 
   updateDOM();
+  calculateWealth()
 }
 // CALCULATE THE TOTAL WEALTH
 function calculateWealth() {
